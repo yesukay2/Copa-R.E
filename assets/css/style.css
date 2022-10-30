@@ -858,6 +858,18 @@ a {
   margin-top: 5px;
 }
 
+.otherImages {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.otherImages>a>img {
+  width: 5rem;
+  height: 100%;
+}
+
 .card-footer {
   padding: 15px;
   display: flex;
@@ -917,6 +929,7 @@ a {
   background: var(--orange-soda);
   color: var(--white);
 }
+
 
 
 
