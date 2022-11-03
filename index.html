@@ -35,21 +35,18 @@
     />
   </head>
 
-  <body>
+  <body class="scrollable">
     <!-- 
     - #HEADER
   -->
 
     <header class="header" data-header>
-      <div class="overlay" data-overlay></div>
-
       <div class="header-top">
         <div class="container">
           <ul class="header-top-list">
             <li>
               <a href="mailto:collinsapra@gmail.com" class="header-top-link">
                 <ion-icon name="mail-outline"></ion-icon>
-
                 <span>collinsapra@gmail.com</span>
               </a>
             </li>
@@ -57,8 +54,7 @@
             <li>
               <a href="#" class="header-top-link">
                 <ion-icon name="location-outline"></ion-icon>
-
-                <address>East Legon - Accra, Ghana</address>
+                <span>East Legon, Accra - Ghana</span>
               </a>
             </li>
           </ul>
@@ -90,7 +86,11 @@
       <div class="header-bottom">
         <div class="container">
           <a href="#" class="logo">
-            <img src="./assets/images/logo222.png" alt="Homeverse logo" />
+            <img
+              src="./assets/images/Copa RE logo-transparent.png"
+              alt="Copa R.E logo"
+              id="header-logo"
+            />
           </a>
 
           <nav class="navbar" data-navbar>
@@ -120,11 +120,14 @@
                   <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
                 </li>
 
-                <li>
-                  <a href="#contact" class="navbar-link" data-nav-link
-                    >Contact</a
-                  >
-                </li>
+                <a
+                  href="https://wa.me/233243481349?text=Hello,%20I%20would%20like%20to%20make%20some%20inquiries%20about%20an%20apartment%20listing"
+                  class="navbar-link"
+                  data-nav-link
+                  ><img
+                    src="assets/images/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteSmall.png"
+                    alt="Chat-on-WhatsApp"
+                /></a>
               </ul>
             </div>
           </nav>
@@ -190,12 +193,11 @@
               <p class="section-subtitle">About Us</p>
 
               <h2 class="h2 section-title">
-                The Leading Real Estate Rental Marketplace.
+                Ghana's Leading Real Estate Agency.
               </h2>
 
               <p class="about-text">
-                Over 39,000 people work for us in more than 70 countries all
-                over the This breadth of global coverage, combined with
+                Over 1000 people work for us all over Ghana, combined with
                 specialist services
               </p>
 
@@ -316,7 +318,7 @@
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Sell a home</a>
+                    <a href="#">Build a home</a>
                   </h3>
 
                   <p class="card-text">
@@ -368,16 +370,16 @@
                   </figure>
 
                   <div class="otherImages">
-                    <a onclick="showImage('assets/images/property-2.jpg')">
+                    <a onclick="showThumb1('assets/images/property-2.jpg')">
                       <img src="assets/images/property-2.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-3.jpg')">
+                    <a onclick="showThumb1('assets/images/property-3.jpg')">
                       <img src="assets/images/property-3.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-4.png')">
+                    <a onclick="showThumb1('assets/images/property-4.png')">
                       <img src="assets/images/property-4.png" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-1.jpg')">
+                    <a onclick="showThumb1('assets/images/property-1.jpg')">
                       <img src="assets/images/property-1.jpg" alt="" />
                     </a>
                   </div>
@@ -420,40 +422,6 @@
                       </li>
                     </ul>
                   </div>
-
-                  <div class="card-footer">
-                    <div class="card-author">
-                      <figure class="author-avatar">
-                        <img
-                          src="./assets/images/author.jpg"
-                          alt="William Seklo"
-                          class="w-100"
-                        />
-                      </figure>
-
-                      <div>
-                        <p class="author-name">
-                          <a href="#">William Seklo</a>
-                        </p>
-
-                        <p class="author-title">Estate Agents</p>
-                      </div>
-                    </div>
-
-                    <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="resize-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </li>
 
@@ -465,6 +433,7 @@
                         src="./assets/images/property-2.jpg"
                         alt="Modern Apartments"
                         class="w-100"
+                        id="thumb2"
                       />
                     </a>
 
@@ -472,16 +441,16 @@
                   </figure>
 
                   <div class="otherImages">
-                    <a onclick="showImage('assets/images/property-2.jpg')">
+                    <a onclick="showThumb2('assets/images/property-2.jpg')">
                       <img src="assets/images/property-2.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-3.jpg')">
+                    <a onclick="showThumb2('assets/images/property-3.jpg')">
                       <img src="assets/images/property-3.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-4.png')">
+                    <a onclick="showThumb2('assets/images/property-4.png')">
                       <img src="assets/images/property-4.png" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-1.jpg')">
+                    <a onclick="showThumb2('assets/images/property-1.jpg')">
                       <img src="assets/images/property-1.jpg" alt="" />
                     </a>
                   </div>
@@ -524,40 +493,6 @@
                       </li>
                     </ul>
                   </div>
-
-                  <div class="card-footer">
-                    <div class="card-author">
-                      <figure class="author-avatar">
-                        <img
-                          src="./assets/images/author.jpg"
-                          alt="William Seklo"
-                          class="w-100"
-                        />
-                      </figure>
-
-                      <div>
-                        <p class="author-name">
-                          <a href="#">William Seklo</a>
-                        </p>
-
-                        <p class="author-title">Estate Agents</p>
-                      </div>
-                    </div>
-
-                    <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="resize-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </li>
 
@@ -569,6 +504,7 @@
                         src="./assets/images/property-3.jpg"
                         alt="Comfortable Apartment"
                         class="w-100"
+                        id="thumb3"
                       />
                     </a>
 
@@ -576,16 +512,16 @@
                   </figure>
 
                   <div class="otherImages">
-                    <a onclick="showImage('assets/images/property-2.jpg')">
+                    <a onclick="showThumb3('assets/images/property-2.jpg')">
                       <img src="assets/images/property-2.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-3.jpg')">
+                    <a onclick="showThumb3('assets/images/property-3.jpg')">
                       <img src="assets/images/property-3.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-4.png')">
+                    <a onclick="showThumb3('assets/images/property-4.png')">
                       <img src="assets/images/property-4.png" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-1.jpg')">
+                    <a onclick="showThumb3('assets/images/property-1.jpg')">
                       <img src="assets/images/property-1.jpg" alt="" />
                     </a>
                   </div>
@@ -627,40 +563,6 @@
                       </li>
                     </ul>
                   </div>
-
-                  <div class="card-footer">
-                    <div class="card-author">
-                      <figure class="author-avatar">
-                        <img
-                          src="./assets/images/author.jpg"
-                          alt="William Seklo"
-                          class="w-100"
-                        />
-                      </figure>
-
-                      <div>
-                        <p class="author-name">
-                          <a href="#">William Seklo</a>
-                        </p>
-
-                        <p class="author-title">Estate Agents</p>
-                      </div>
-                    </div>
-
-                    <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="resize-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </li>
 
@@ -672,6 +574,7 @@
                         src="./assets/images/property-4.png"
                         alt="Luxury villa in Rego Park"
                         class="w-100"
+                        id="thumb4"
                       />
                     </a>
 
@@ -679,16 +582,16 @@
                   </figure>
 
                   <div class="otherImages">
-                    <a onclick="showImage('assets/images/property-2.jpg')">
+                    <a onclick="showThumb4('assets/images/property-2.jpg')">
                       <img src="assets/images/property-2.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-3.jpg')">
+                    <a onclick="showThumb4('assets/images/property-3.jpg')">
                       <img src="assets/images/property-3.jpg" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-4.png')">
+                    <a onclick="showThumb4('assets/images/property-4.png')">
                       <img src="assets/images/property-4.png" alt="" />
                     </a>
-                    <a onclick="showImage('assets/images/property-1.jpg')">
+                    <a onclick="showThumb4('assets/images/property-1.jpg')">
                       <img src="assets/images/property-1.jpg" alt="" />
                     </a>
                   </div>
@@ -730,40 +633,6 @@
                         <span>Square Ft</span>
                       </li>
                     </ul>
-                  </div>
-
-                  <div class="card-footer">
-                    <div class="card-author">
-                      <figure class="author-avatar">
-                        <img
-                          src="./assets/images/author.jpg"
-                          alt="William Seklo"
-                          class="w-100"
-                        />
-                      </figure>
-
-                      <div>
-                        <p class="author-name">
-                          <a href="#">William Seklo</a>
-                        </p>
-
-                        <p class="author-title">Estate Agents</p>
-                      </div>
-                    </div>
-
-                    <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="resize-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <button class="card-footer-actions-btn">
-                        <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </li>
@@ -905,7 +774,7 @@
           <div class="container">
             <p class="section-subtitle">News & Blogs</p>
 
-            <h2 class="h2 section-title">Leatest News Feeds</h2>
+            <h2 class="h2 section-title">Leatest Feeds/Designs</h2>
 
             <ul class="blog-list has-scrollbar">
               <li>
@@ -1093,28 +962,25 @@
   -->
 
     <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="footer-brand">
-            <a href="#" class="logo">
+      <div class="container">
+        <div class="footer-brand">
+          <div id="sub-wrapper1">
+            <a href="#" class="logo" id="footer-logo">
               <img
-                src="./assets/images/logo222.png"
+                src="./assets/images/Copa RE logo-transparent.png"
                 alt="Copa R.E logo"
-                width="100%"
               />
             </a>
 
-            <p class="section-text">
-              Lorem Ipsum is simply dummy text of the and typesetting industry.
-              Lorem Ipsum is dummy text of the printing.
-            </p>
-
+            <p class="section-text">Lorem Ipsum simply slogan.</p>
+          </div>
+          <div id="sub-wrapper2">
             <ul class="contact-list">
               <li>
-                <a href="#" class="contact-link">
-                  <ion-icon name="location-outline"></ion-icon>
+                <a href="mailto:collinsapra@gmail.com" class="contact-link">
+                  <ion-icon name="mail-outline"></ion-icon>
 
-                  <address>East Legon - Accra, Ghana</address>
+                  <span>collinsapra@gmail.com</span>
                 </a>
               </li>
 
@@ -1125,16 +991,17 @@
                   <span>+233 (0) 243481349</span>
                 </a>
               </li>
-
               <li>
-                <a href="mailto:collinsapra@gmail.com" class="contact-link">
-                  <ion-icon name="mail-outline"></ion-icon>
+                <a href="#" class="contact-link">
+                  <ion-icon name="location-outline"></ion-icon>
 
-                  <span>collinsapra@gmail.com</span>
+                  <address>East Legon - Accra, Ghana</address>
                 </a>
               </li>
             </ul>
+          </div>
 
+          <!-- <div id="sub-wrapper3">
             <ul class="social-list">
               <li>
                 <a href="#" class="social-link">
@@ -1150,119 +1017,21 @@
 
               <li>
                 <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-youtube"></ion-icon>
+                  <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
             </ul>
-          </div>
-
-          <div class="footer-link-box">
-            <ul class="footer-list">
-              <li>
-                <p class="footer-list-title">Company</p>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">About</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Blog</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">All Products</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Locations Map</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">FAQ</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Contact us</a>
-              </li>
-            </ul>
-
-            <ul class="footer-list">
-              <li>
-                <p class="footer-list-title">Services</p>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Order tracking</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Wish List</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Login</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">My account</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Terms & Conditions</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Promotional Offers</a>
-              </li>
-            </ul>
-
-            <ul class="footer-list">
-              <li>
-                <p class="footer-list-title">Customer Care</p>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Login</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">My account</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Wish List</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Order tracking</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">FAQ</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Contact us</a>
-              </li>
-            </ul>
-          </div>
+          </div> -->
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <!-- <div class="footer-bottom">
         <div class="container">
           <p class="copyright">
             &copy; 2022 <a href="#">COPA GROUPS</a>. All Rights Reserved
           </p>
         </div>
-      </div>
+      </div> -->
     </footer>
 
     <!-- 

@@ -2,10 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
 
 
 
@@ -106,6 +102,7 @@ span,
 button,
 ion-icon {
   display: block;
+
 }
 
 button {
@@ -118,6 +115,9 @@ button {
 
 address {
   font-style: normal;
+  display: inline;
+  padding: 0%;
+
 }
 
 ion-icon {
@@ -351,7 +351,7 @@ a {
 
 .header-top-link ion-icon {
   color: var(--orange-soda);
-  font-size: 15px;
+  font-size: 18px;
   --ionicon-stroke-width: 60px;
 }
 
@@ -445,6 +445,11 @@ a {
 
 .navbar-link:is(:hover, :focus) {
   color: var(--orange-soda);
+}
+
+.navbar-link>img {
+  width: 10rem;
+  height: 2rem;
 }
 
 .overlay {
@@ -1186,17 +1191,39 @@ a {
   color: inherit;
 }
 
-.footer-top {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
 
 .footer-brand {
-  margin-bottom: 70px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 50px;
+  justify-content: space-between;
 }
 
-.footer-brand .logo {
-  margin-bottom: 15px;
+#sub-wrapper2 {
+  margin-top: 50px;
+}
+
+#sub-wrapper2 address {
+  margin-bottom: 0px;
+
+}
+
+#sub-wrapper3 {
+  margin-left: 0rem;
+}
+
+#footer-logo>img {
+  width: 11rem;
+  height: 9rem;
+  margin-top: 30px;
+  margin-bottom: 0%;
+}
+
+#sub-wrapper1 p {
+  margin-top: 0%;
+  font-weight: 200;
+  font-size: smaller;
 }
 
 .section-text {
@@ -1208,18 +1235,22 @@ a {
 
 .contact-list {
   display: grid;
-  gap: 15px;
+  gap: 1rem;
   margin-bottom: 30px;
+  background-color: hsl(246, 51%, 86%);
+  color: black;
+  padding: 10px;
+  border-radius: 1rem;
 }
 
 .contact-link {
-  display: flex;
+  display: inline-flex;
   align-items: flex-start;
   gap: 10px;
 }
 
 .contact-link ion-icon {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .contact-link :is(address, span) {
@@ -1232,9 +1263,18 @@ a {
 }
 
 .social-list {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 0%;
+  gap: 30px;
+  background-color: aliceblue;
+  color: black;
+}
+
+.social-list li a ion-icon {
+  margin-left: 0%;
+  text-align: start;
 }
 
 .footer-list:not(:last-child) {
@@ -1266,6 +1306,7 @@ a {
   font-size: var(--fs-5);
   text-align: center;
 }
+
 
 .copyright a {
   display: inline-block;
@@ -1449,6 +1490,10 @@ a {
     justify-content: space-between;
     align-items: center;
     max-height: 100%;
+  }
+
+  #header-logo {
+    background-color: var(--prussian-blue);
   }
 
   /* .header-bottom-actions-btn ion-icon {
@@ -1721,14 +1766,9 @@ a {
    * FOOTER
    */
 
-  .footer-top .container {
+  .footer .container {
     display: flex;
     justify-content: space-between;
-  }
-
-  .footer-brand {
-    max-width: 300px;
-    margin-bottom: 0;
   }
 
   .footer-link-box {
@@ -1805,12 +1845,14 @@ a {
 
   .navbar-link {
     color: var(--dark-jungle-green);
-    --fs-5: 1.125rem;
+    --fs-5: 1.2rem;
     text-transform: capitalize;
+
   }
 
   .header {
-    padding-bottom: 114px;
+    padding-bottom: 115px;
+
   }
 
   .header-bottom {
