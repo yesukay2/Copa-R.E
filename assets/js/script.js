@@ -35,9 +35,12 @@ function showThumb4(src) {
 // }
 // });
 
-const scrollVal = document.querySelector(".scrollable");
 
-scrollVal.addEventListener("scroll", () => {
-    console.log(`scroll value is: ${scrollVal.scrollTop}`);
-    console.log(scrollVal);
-})
+function responsiveNav() {
+    let navbar = document.getElementsByClassName("header-bottom");
+    if (navbar.className === "header-bottom") {
+        navbar.className += " responsive";
+    } else {
+        navbar.className = "header-bottom";
+    }
+}

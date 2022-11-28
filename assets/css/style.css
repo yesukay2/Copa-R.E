@@ -1511,6 +1511,10 @@ a {
     box-shadow: var(--shadow-2);
   } */
 
+  .nav-icon {
+    display: none;
+  }
+
 
 
   /**
