@@ -25,12 +25,12 @@
   --raisin-black-1: hsl(227, 29%, 13%);
   --raisin-black-2: hsl(229, 17%, 19%);
   --yellow-green: hsl(89, 72%, 45%);
-  --orange-soda: hsl(9, 100%, 62%);
+  --bright-green: hsl(93, 57%, 44%);
   --cultured-1: hsl(0, 0%, 93%);
   --cultured-2: hsl(192, 24%, 96%);
-  --misty-rose: hsl(7, 56%, 91%);
+  --misty-rose: hsl(8, 54%, 54%);
   --alice-blue: hsl(210, 100%, 97%);
-  --seashell: hsl(8, 100%, 97%);
+  --seashell: hsl(8, 86%, 41%);
   --cadet: hsl(200, 15%, 43%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -170,12 +170,12 @@ button, a { transition: var(--transition); }
 
 .btn {
   position: relative;
-  background: var(--orange-soda);
+  background: var(--bright-green);
   color: var(--white);
   font-family: var(--ff-poppins);
   font-size: var(--fs-5);
   text-transform: var(--text-transform, capitalize);
-  border: 1px solid var(--orange-soda);
+  border: 1px solid var(--bright-green);
   padding: 10px 20px;
   z-index: 1;
 }
@@ -203,7 +203,7 @@ button, a { transition: var(--transition); }
 .w-100 { width: 100%; }
 
 .section-subtitle {
-  color: var(--orange-soda);
+  color: var(--bright-green);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   padding: 5px 20px;
@@ -232,7 +232,7 @@ button, a { transition: var(--transition); }
 
 .card-badge.green { background: var(--yellow-green); }
 
-.card-badge.orange { background: var(--orange-soda); }
+.card-badge.orange { background: var(--bright-green); }
 
 .has-scrollbar {
   display: flex;
@@ -305,10 +305,10 @@ button, a { transition: var(--transition); }
   gap: 5px;
 }
 
-.header-top-link:is(:hover, :focus) { color: var(--orange-soda); }
+.header-top-link:is(:hover, :focus) { color: var(--bright-green); }
 
 .header-top-link ion-icon {
-  color: var(--orange-soda);
+  color: var(--bright-green);
   font-size: 15px;
   --ionicon-stroke-width: 60px;
 }
@@ -329,14 +329,14 @@ button, a { transition: var(--transition); }
 }
 
 .header-top-btn {
-  background: var(--orange-soda);
+  background: var(--bright-green);
   color: var(--white);
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
   padding: 4px 15px;
 }
 
-.header-top-btn:is(:hover, :focus) { --orange-soda: hsl(7, 72%, 46%); }
+.header-top-btn:is(:hover, :focus) { --bright-green: hsl(7, 72%, 46%); }
 
 .header-bottom {
   background: var(--white);
@@ -391,7 +391,7 @@ button, a { transition: var(--transition); }
   padding-block: 15px;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+.navbar-link:is(:hover, :focus) { color: var(--bright-green); }
 
 .overlay {
   position: fixed;
@@ -430,7 +430,7 @@ button, a { transition: var(--transition); }
   transition: var(--transition);
 }
 
-.header-bottom-actions-btn:is(:hover, :focus) ion-icon { color: var(--orange-soda); }
+.header-bottom-actions-btn:is(:hover, :focus) ion-icon { color: var(--bright-green); }
 
 .header-bottom-actions-btn span {
   color: var(--cadet);
@@ -462,7 +462,7 @@ button, a { transition: var(--transition); }
   margin-bottom: 20px;
 }
 
-.hero-subtitle ion-icon { color: var(--orange-soda); }
+.hero-subtitle ion-icon { color: var(--bright-green); }
 
 .hero-subtitle span {
   color: var(--dark-jungle-green);
@@ -543,7 +543,7 @@ button, a { transition: var(--transition); }
 }
 
 .about-item-icon ion-icon {
-  color: var(--orange-soda);
+  color: var(--bright-green);
   font-size: 18px;
 }
 
@@ -559,7 +559,7 @@ button, a { transition: var(--transition); }
   font-weight: var(--fw-500);
   line-height: 1.8;
   padding: 20px 25px;
-  border-left: 4px solid var(--orange-soda);
+  border-left: 4px solid var(--bright-green);
   margin-bottom: 40px;
 }
 
@@ -604,7 +604,7 @@ button, a { transition: var(--transition); }
 
 .service-card .card-title { margin-bottom: 15px; }
 
-.service-card .card-title > a:is(:hover, :focus) { color: var(--orange-soda); }
+.service-card .card-title > a:is(:hover, :focus) { color: var(--bright-green); }
 
 .service-card .card-text {
   color: var(--cadet);
@@ -623,7 +623,7 @@ button, a { transition: var(--transition); }
   gap: 5px;
 }
 
-.service-card:is(:hover, :focus) .card-link { color: var(--orange-soda); }
+.service-card:is(:hover, :focus) .card-link { color: var(--bright-green); }
 
 .service-card::after {
   content: "";
@@ -632,7 +632,7 @@ button, a { transition: var(--transition); }
   left: 0;
   width: 0;
   height: 4px;
-  background: var(--orange-soda);
+  background: var(--bright-green);
   transition: var(--transition);
 }
 
@@ -704,7 +704,7 @@ button, a { transition: var(--transition); }
 
 .banner-actions-btn:first-child { margin-right: auto; }
 
-.banner-actions-btn:is(:hover, :focus) { color: var(--orange-soda); }
+.banner-actions-btn:is(:hover, :focus) { color: var(--bright-green); }
 
 .property-card .card-content {
   padding: 30px 15px 15px;
@@ -712,7 +712,7 @@ button, a { transition: var(--transition); }
 }
 
 .card-price {
-  color: var(--orange-soda);
+  color: var(--bright-green);
   font-family: var(--ff-poppins);
   font-size: var(--fs-5);
   margin-bottom: 5px;
@@ -728,7 +728,7 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px;
 }
 
-.property-card .card-title > a:is(:hover, :focus) { color: var(--orange-soda); }
+.property-card .card-title > a:is(:hover, :focus) { color: var(--bright-green); }
 
 .property-card .card-text {
   color: var(--cadet);
@@ -807,7 +807,7 @@ button, a { transition: var(--transition); }
   margin-bottom: 3px;
 }
 
-.author-name > a:is(:hover, :focus) { color: var(--orange-soda); }
+.author-name > a:is(:hover, :focus) { color: var(--bright-green); }
 
 .author-title {
   color: var(--cadet);
@@ -831,7 +831,7 @@ button, a { transition: var(--transition); }
 }
 
 .card-footer-actions-btn:is(:hover, :focus) {
-  background: var(--orange-soda);
+  background: var(--bright-green);
   color: var(--white);
 }
 
@@ -871,11 +871,11 @@ button, a { transition: var(--transition); }
   box-shadow: var(--shadow-1);
 }
 
-.features-card:is(:hover, :focus) { background: var(--orange-soda); }
+.features-card:is(:hover, :focus) { background: var(--bright-green); }
 
 .features-card .card-icon {
   background: var(--seashell);
-  color: var(--orange-soda);
+  color: var(--bright-green);
   width: 60px;
   height: 60px;
   display: grid;
@@ -914,7 +914,9 @@ button, a { transition: var(--transition); }
   transition: var(--transition);
 }
 
-.features-card:is(:hover, :focus) .card-btn { color: var(--orange-soda); }
+.features-card:is(:hover, :focus) .card-btn { color: var(
+  
+); }
 
 
 
@@ -960,16 +962,16 @@ button, a { transition: var(--transition); }
   transition: var(--transition);
 }
 
-.blog-card :is(.card-meta-link, .publish-date) ion-icon { color: var(--orange-soda); }
+.blog-card :is(.card-meta-link, .publish-date) ion-icon { color: var(--bright-green); }
 
-.blog-card .card-meta-link:is(:hover, :focus) { color: var(--orange-soda); }
+.blog-card .card-meta-link:is(:hover, :focus) { color: var(--bright-green); }
 
 .blog-title {
   font-size: 1rem;
   --font-weight: var(--fw-600);
 }
 
-.blog-card .blog-title:is(:hover, :focus) { color: var(--orange-soda); }
+.blog-card .blog-title:is(:hover, :focus) { color: var(--bright-green); }
 
 .blog-content-bottom {
   padding-top: 20px;
@@ -981,7 +983,7 @@ button, a { transition: var(--transition); }
 }
 
 .blog-card .read-more-btn {
-  color: var(--orange-soda);
+  color: var(--bright-green);
   font-size: var(--fs-7);
   font-weight: var(--fw-600);
   text-transform: uppercase;
@@ -1000,7 +1002,7 @@ button, a { transition: var(--transition); }
 }
 
 .cta-card {
-  background: var(--orange-soda);
+  background: var(--bright-green);
   padding: 50px 25px;
   box-shadow: var(--shadow-2);
 }
@@ -1095,7 +1097,7 @@ button, a { transition: var(--transition); }
   transition: var(--transition);
 }
 
-.contact-link:is(:hover, :focus) span { color: var(--orange-soda); }
+.contact-link:is(:hover, :focus) span { color: var(--bright-green); }
 
 .social-list {
   display: flex;
@@ -1117,7 +1119,7 @@ button, a { transition: var(--transition); }
   padding-block: 10px;
 }
 
-.footer-link:is(:hover, :focus) { color: var(--orange-soda); }
+.footer-link:is(:hover, :focus) { color: var(--bright-green); }
 
 .footer-bottom {
   background: var(--raisin-black-2);
@@ -1131,7 +1133,7 @@ button, a { transition: var(--transition); }
 
 .copyright a { display: inline-block; }
 
-.copyright a:is(:hover, :focus) { color: var(--orange-soda); }
+.copyright a:is(:hover, :focus) { color: var(--bright-green); }
 
 
 
