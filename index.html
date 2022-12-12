@@ -25,6 +25,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+<!-- google icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
@@ -123,8 +125,47 @@
 
           </div>
 
-          <div class="navbar-bottom">
+          <div class="navbar-bottom" id="navbar-bottom">
             <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+              </li>
+
+              <li>
+                <a href="#property" class="navbar-link" data-nav-link>Property</a>
+              </li>
+
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+
+              <li>
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/233243481349?text=Hello%20Sir,%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20property" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+
+          <!-- mobile view Nav -->
+          <div class="mobile-navbar" id="mobile-navbar" style="display: none;">
+            <ul class="navbar-list">
+
+              <!-- close button -->
+              <a>
+                <span class="material-symbols-outlined" id="closeBt" onclick="hideNav()">
+                  close
+                  </span>
+              </a>
 
               <li>
                 <a href="#home" class="navbar-link" data-nav-link>Home</a>
@@ -175,7 +216,8 @@
             <span>Cart</span>
           </button>
 
-          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+          <!-- hamburger menu icon -->
+          <button class="header-bottom-actions-btn hamburger" id="hamburger" onclick="showNav()" data-nav-open-btn aria-label="Open Menu">
             <ion-icon name="menu-outline"></ion-icon>
 
             <span>Menu</span>
@@ -995,9 +1037,9 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
+          <!-- <a href="#" class="logo">
             <img src="assets/images/Copa RE logo-transparent.png" alt="COPA R.E logo"  width="200vw" height="100vw">
-          </a>
+          </a> -->
 
          
 

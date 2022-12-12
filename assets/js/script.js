@@ -36,11 +36,28 @@ function showThumb4(src) {
 // });
 
 
-function responsiveNav() {
-    let navbar = document.getElementsByClassName("header-bottom");
-    if (navbar.className === "header-bottom") {
-        navbar.className += " responsive";
-    } else {
-        navbar.className = "header-bottom";
+// function responsiveNav() {
+//     let navbar = document.getElementsByClassName("header-bottom");
+//     if (navbar.className === "header-bottom") {
+//         navbar.className += " responsive";
+//     } else {
+//         navbar.className = "header-bottom";
+//     }
+// }
+
+var hamburger = document.getElementById("hamburger");
+var menuList = document.getElementById("mobile-navbar");
+
+function showNav(){
+    console.log("Unhidden");
+    if(window.screen.width <= 768 && menuList.style.display && menuList.style.display === "none"){
+        menuList.style.display="block";
+    }
+}
+
+function hideNav(){
+    console.log("hidden");
+    if(menuList.style.display == "block"){
+        menuList.style.display="none";
     }
 }
