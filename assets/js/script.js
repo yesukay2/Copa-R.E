@@ -47,17 +47,16 @@ function showThumb4(src) {
 
 var hamburger = document.getElementById("hamburger");
 var menuList = document.getElementById("mobile-navbar");
-
+var body = $('body');
 function showNav(){
     console.log("Unhidden");
-    if(window.screen.width <= 768 && menuList.style.display && menuList.style.display === "none"){
+    if(window.screen.width <= 768 && menuList.style.display === "none"){
         menuList.style.display="block";
+        body.style.backgroundColor= "red";
     }
 }
 
 function hideNav(){
     console.log("hidden");
-    if(menuList.style.display == "block"){
-        menuList.style.display="none";
-    }
+    menuList.style.display="none";
 }

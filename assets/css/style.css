@@ -1833,7 +1833,14 @@ button, a { transition: var(--transition); }
     right: 0;
     height: 60vh;
     width: 100%;
-    background-color: var(--opal);
+    background-color: var(--white);
+  }
+
+  @media only screen and (max-width: 768px){
+    .mobile-navbar{
+      display: none;
+      z-index: 900000!important;
+    }
   }
   
   
