@@ -50,13 +50,13 @@ var menuList = document.getElementById("mobile-navbar");
 var body = $('body');
 function showNav(){
     console.log("Unhidden");
-    if(window.screen.width <= 768 && menuList.style.display === "none"){
-        menuList.style.display="block";
-        body.style.backgroundColor= "red";
-    }
+    menuList.style.display="block";
+    body.style.backgroundColor= "red";
 }
 
 function hideNav(){
     console.log("hidden");
     menuList.style.display="none";
 }
+
+
