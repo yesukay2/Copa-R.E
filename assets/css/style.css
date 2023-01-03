@@ -119,7 +119,7 @@ html {
 
 body {
   background: var(--white);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
