@@ -29,7 +29,7 @@ function hideNav(){
 }
 
 const closebt = document.getElementById('closeBt');
-// const hamburger = document.getElementById('hamburger');
+
 
 
 document.onclick = function(e){
@@ -42,3 +42,5 @@ hamburger.onclick = function(){
     menuList.style.width="250px";
     menuList.classList.toggle('active');
 }
+
+
