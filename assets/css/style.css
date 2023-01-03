@@ -119,7 +119,7 @@ html {
 
 body {
   background: var(--white);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -651,7 +651,7 @@ button, a { transition: var(--transition); }
 .property { padding-block: var(--section-padding); }
 
 .property-list{
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .property-card {
