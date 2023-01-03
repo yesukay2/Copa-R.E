@@ -505,7 +505,7 @@ button, a { transition: var(--transition); }
 
 .about-banner .abs-img {
   position: absolute;
-  bottom: 100px;
+  bottom: 2px;
   left: 15px;
   width: 50%;
   border-radius: 4px;
