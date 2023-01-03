@@ -33,8 +33,8 @@ const closebt = document.getElementById('closeBt');
 
 
 document.onclick = function(e){
-    if(e.target.className !== "navbar-link" && e.target.id !== "closeBt"){
-        menuList.classList.remove('active');
+    if(e.target.className == "navbar-link"){
+        hideNav();
     }
 }
 
