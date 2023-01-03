@@ -238,7 +238,7 @@ button, a { transition: var(--transition); }
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  overflow-x: scroll;
+  overflow-x: auto;
   margin-inline: -15px;
   padding-inline: 15px;
   scroll-padding-left: 15px;
@@ -649,6 +649,10 @@ button, a { transition: var(--transition); }
 \*-----------------------------------*/
 
 .property { padding-block: var(--section-padding); }
+
+.property-list{
+  overflow-x: scroll;
+}
 
 .property-card {
   border: 1px solid var(--alice-blue);
