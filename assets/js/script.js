@@ -39,6 +39,6 @@ document.onclick = function(e){
 }
 
 hamburger.onclick = function(){
-    menuList.style.width="350px";
+    menuList.style.width="250px";
     menuList.classList.toggle('active');
 }
