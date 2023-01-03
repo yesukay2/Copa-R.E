@@ -1809,18 +1809,31 @@ button, a { transition: var(--transition); }
   }
 }
 .mobile-navbar{
-  position: absolute;
+  position: fixed;
   align-items: center;
+  top: 0;
   right: 0;
-  height: 60vh;
-  width: 100%;
+  height: 100%;
+  width: 0;
   background-color: var(--white);
   z-index: 10000000000;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 4rem;
+  font-family: "Bebas Neue";
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
 }
 .mobile-navbar li a{
   color: var(--prussian-blue);
   text-align: center;
   align-items: center;
+  transition: 0.4s;
+  white-space: nowrap;
+}
+.mobile-navbar li:hover{
+  color: var(--yellow-green);
+
 }
 .mobile-navbar>ul{
   display: flex;
@@ -1828,6 +1841,19 @@ button, a { transition: var(--transition); }
   margin-top: 5vh;
   gap: 1vh;
   
+}
+#closeBt{
+  position: absolute;
+  z-index: 10000;
+  right: 1%;
+  top: 2%;
+  cursor: pointer;
+}
+
+#closeBt>span:hover{
+  transform: scale(1.2);
+  background-color: var(--prussian-blue);
+
 }
 @media only screen and (max-width: 768px) {
   .otherImages>a>img {
@@ -1848,12 +1874,6 @@ button, a { transition: var(--transition); }
   }
   
   
-  #closeBt{
-    position: absolute;
-    z-index: 10000;
-    right: 1%;
-    top: 2%;
-  }
 
 }
 

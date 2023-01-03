@@ -18,45 +18,27 @@ function showThumb4(src) {
 }
 
 
-// var header = document.querySelector(".header-bottom");
-// if (document.body.scrollBy > 1) {
-//     header.setAttribute("id", "sticky");
-// } else {
-//     header.setAttribute('id', "")
-// }
-// console.log(header);
-
-
-// $(document).ready(function(){
-//   if (document.body.scrollBy > 1) {
-//     header.setAttribute("id", "sticky");
-// } else {
-//     header.setAttribute('id', "")
-// }
-// });
-
-
-// function responsiveNav() {
-//     let navbar = document.getElementsByClassName("header-bottom");
-//     if (navbar.className === "header-bottom") {
-//         navbar.className += " responsive";
-//     } else {
-//         navbar.className = "header-bottom";
-//     }
-// }
-
 var hamburger = document.getElementById("hamburger");
 var menuList = document.getElementById("mobile-navbar");
-var body = $('body');
-function showNav(){
-    console.log("Unhidden");
-    menuList.style.display="block";
-    body.style.backgroundColor= "red";
-}
+
+
 
 function hideNav(){
-    console.log("hidden");
-    menuList.style.display="none";
+    menuList.setAttribute("style", "width:0px");
+    menuList.classList.remove('active');
 }
 
+const closebt = document.getElementById('closeBt');
+// const hamburger = document.getElementById('hamburger');
 
+
+document.onclick = function(e){
+    if(e.target.className !== "navbar-link" && e.target.id !== "closeBt"){
+        // menuList.classList.remove('active');
+    }
+}
+
+hamburger.onclick = function(){
+    menuList.style.width="350px";
+    menuList.classList.toggle('active');
+}
